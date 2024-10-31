@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="mod_track_test"
+config/name="Mario Kart Track Pack"
 config/features=PackedStringArray("4.2", "Mobile")
 
 [layer_names]
