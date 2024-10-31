@@ -13,6 +13,10 @@ config_version=5
 config/name="Mario Kart Track Pack"
 config/features=PackedStringArray("4.2", "Mobile")
 
+[filesystem]
+
+import/blender/enabled=false
+
 [layer_names]
 
 3d_render/layer_1="Ground"
