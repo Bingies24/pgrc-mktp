@@ -3,7 +3,7 @@ A work in progress mod for Parking Garage Rally Circuit that contains remakes of
 
 ## Planned tracks
 SMK Vanilla Lake 1<br>
-<li>SMK Vanilla Lake 2</li>
+SMK Vanilla Lake 2<br>
 <li>MKSC Shy Guy Beach</li>
 <li>MKDS Yoshi Falls</li>
 <li>MKDS Waluigi Pinball</li>
