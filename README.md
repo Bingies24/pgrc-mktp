@@ -1,5 +1,11 @@
-# PGRC Mod Template Project
-This is a template Godot 4.2 project that can serve as the starting point for making your own mod for [Parking Garage Rally Circuit](https://store.steampowered.com/app/2737300/Parking_Garage_Rally_Circuit/)
+# Mario Kart Track Pack
+A work in progress mod for Parking Garage Rally Circuit that contains remakes of classic Mario Kart tracks!
 
-## Documentation
-Check out the PGRC modding [documentation site](https://walaber-ent.github.io/pgrc-mod/)
+## Planned tracks
+SMK Vanilla Lake 1
+SMK Vanilla Lake 2
+MKSC Shy Guy Beach
+MKDS Yoshi Falls
+MKDS Waluigi Pinball
+MKDS Peach Gardens
+MKWII Mushroom Gorge
