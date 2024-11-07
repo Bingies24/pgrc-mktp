@@ -1,5 +1,6 @@
-# PGRC Mod Template Project
-This is a template Godot 4.2 project that can serve as the starting point for making your own mod for [Parking Garage Rally Circuit](https://store.steampowered.com/app/2737300/Parking_Garage_Rally_Circuit/)
+# Custom Objects
+This is where my custom objects go, extended the capabilities of modded tracks.
+I have yet to figure out whether people will have to credit me or not.
 
-## Documentation
-Check out the PGRC modding [documentation site](https://walaber-ent.github.io/pgrc-mod/)
+## Planned objects
+<li>Barrel Cannon (based off of Mario Kart Wii)</li>
