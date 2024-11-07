@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://70arnbr65lq7"]
+[gd_scene load_steps=20 format=3 uid="uid://70arnbr65lq7"]
 
 [ext_resource type="Script" path="res://Mods/Scripts/ModTrack.gd" id="1_lruo3"]
 [ext_resource type="Script" path="res://Mods/Scripts/ModRaceSettings.gd" id="2_soh6p"]
@@ -10,7 +10,6 @@
 [ext_resource type="PackedScene" uid="uid://cu0mwqn0aqh5x" path="res://Mods/Placeholders/mod_track_path_point.tscn" id="8_ocxuu"]
 [ext_resource type="PackedScene" uid="uid://cq6m734ruksda" path="res://Mods/Placeholders/mod_barrier_arrow_block.tscn" id="9_4k6xu"]
 [ext_resource type="PackedScene" uid="uid://dq2fgy8jxkssy" path="res://Mods/Placeholders/mod_barrier_railing.tscn" id="10_c3rvm"]
-[ext_resource type="PackedScene" uid="uid://b80ls8gu1xpos" path="res://Mods/Placeholders/mod_spectator_car.tscn" id="11_mwx2l"]
 [ext_resource type="PackedScene" uid="uid://cvsxe56hnxaa0" path="res://Mods/Placeholders/mod_trigger.tscn" id="12_1tfdd"]
 [ext_resource type="Script" path="res://Mods/Scripts/ModTrackCamera.gd" id="14_ym7fg"]
 [ext_resource type="PackedScene" uid="uid://dqqrq7ntnw2j8" path="res://Mods/Placeholders/mod_track_camera_previewer.tscn" id="15_s00jq"]
@@ -35,13 +34,10 @@ script = ExtResource("3_ibb3h")
 car_class = "cheat"
 laps = 2
 
-[sub_resource type="ImmediateMesh" id="ImmediateMesh_uqja3"]
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_jxxaw"]
 
-[sub_resource type="BoxMesh" id="BoxMesh_o6w1e"]
+[sub_resource type="BoxMesh" id="BoxMesh_h473u"]
 size = Vector3(150, 2, 150)
-
-[sub_resource type="BoxMesh" id="BoxMesh_th1jo"]
-size = Vector3(50, 10, 5)
 
 [node name="TrackWalaberTest" type="Node3D"]
 script = ExtResource("1_lruo3")
@@ -69,7 +65,7 @@ size = Vector2(6, 5)
 [node name="TrackPath" type="MeshInstance3D" parent="."]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.14903, 0)
-mesh = SubResource("ImmediateMesh_uqja3")
+mesh = SubResource("ImmediateMesh_jxxaw")
 script = ExtResource("6_ujbmt")
 material = ExtResource("7_vuguv")
 bezier_handle_length = 2.5
@@ -120,36 +116,13 @@ railing_type = 3
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.12657, 0)
 
-[node name="spectator_car" parent="SpectatorCars" instance=ExtResource("11_mwx2l")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2, -0.68, 2)
-
-[node name="spectator_car2" parent="SpectatorCars" instance=ExtResource("11_mwx2l")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2, -0.68, -1.19209e-07)
-
-[node name="spectator_car3" parent="SpectatorCars" instance=ExtResource("11_mwx2l")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2, -0.68, -2)
-
-[node name="spectator_car4" parent="SpectatorCars" instance=ExtResource("11_mwx2l")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2, -0.68, -2)
-
-[node name="spectator_car5" parent="SpectatorCars" instance=ExtResource("11_mwx2l")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2, -0.68, -2.38419e-07)
-
-[node name="spectator_car6" parent="SpectatorCars" instance=ExtResource("11_mwx2l")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2, -0.68, 2)
-
 [node name="OutOfBounds" type="Node3D" parent="."]
 unique_name_in_owner = true
 
 [node name="trigger" parent="OutOfBounds" instance=ExtResource("12_1tfdd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3, 0)
-mesh = SubResource("BoxMesh_o6w1e")
+mesh = SubResource("BoxMesh_h473u")
 size = Vector3(150, 2, 150)
-
-[node name="trigger2" parent="OutOfBounds" instance=ExtResource("12_1tfdd")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, -16)
-mesh = SubResource("BoxMesh_th1jo")
-size = Vector3(50, 10, 5)
 
 [node name="TrackCameras" type="Node3D" parent="."]
 unique_name_in_owner = true
